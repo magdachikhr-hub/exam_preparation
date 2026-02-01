@@ -45,6 +45,47 @@ header {
   }
 }
 
+/* section first */
+section.first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .section_first_text {
+    margin-left: 30px;
+    h2 {
+      width: 340px;
+      font-size: 64px;
+      color: #222222;
+      font-weight: 700;
+    }
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      color: #666666;
+      width: 324px;
+      margin-top: 32px;
+      margin-bottom: 48px;
+    }
+    button.sign_up {
+      margin-bottom: 144px;
+    }
+  }
+}
+
+button.sign_up {
+  width: 160px;
+  height: 49px;
+  border-radius: 5px;
+  background-color: #002699;
+  color: white;
+  box-shadow: 0px 8px 16px 0px #fa74363d;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* responsive */
+
 @media screen and (min-width: 1150px) {
   header img.burger_menu {
     display: none;
@@ -55,14 +96,19 @@ header {
   }
   header button.sign_up {
     display: block;
-    width: 160px;
-    height: 49px;
-    border-radius: 5px;
-    background-color: #002699;
-    color: white;
-    box-shadow: 0px 8px 16px 0px #fa74363d;
-    border: none;
-    font-size: 16px;
-    font-weight: 600;
+  }
+  section.first {
+    flex-direction: row;
+    gap: 111px;
+    margin-top: 90px;
+    .section_first_text {
+      h2 {
+        width: 536px;
+      }
+      p {
+        width: 496px;
+        margin-bottom: 108px;
+      }
+    }
   }
 }
