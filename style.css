@@ -228,6 +228,18 @@ section.fourth {
   }
 }
 
+/* section fifth */
+section.fifth {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 73px;
+  iframe {
+    display: block;
+    width: 100%;
+    max-width: 1074px;
+  }
+}
+
 /* responsive */
 
 @media screen and (min-width: 1150px) {
@@ -280,6 +292,12 @@ section.fourth {
     div.cars {
       flex-direction: row;
       gap: 30px;
+    }
+  }
+  section.fifth {
+    margin-bottom: 93px;
+    iframe {
+      height: 593px;
     }
   }
 }
